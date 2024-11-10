@@ -108,3 +108,8 @@
 .add-comment button:hover {
     background-color: #007bb5;
 }
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
