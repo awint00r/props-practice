@@ -1,7 +1,7 @@
 import React from "react";
 import "./insta.css";
 import posts from "./demopost.json"; 
-import Post from "./InsagramPost.js";
+import Post from "./InstagramPost.js";
 
 function App() {
 
