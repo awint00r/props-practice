@@ -1,6 +1,6 @@
 /* Instagram Post Layout */
 .post {
-    width: 500px;
+    width: 80%;
     border: 1px solid #dbdbdb;
     border-radius: 8px;
     margin: 20px auto;
@@ -112,6 +112,7 @@
 .app {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
  /* Smartphones (portrait and landscape) ----------- */
@@ -123,38 +124,20 @@
     }
  }
 
- /* Smartphones (landscape) ----------- */
- @media only screen 
- and (min-width : 321px) {
+ @media (max-width: 768px) {
     .app {
         grid-template-columns: 1fr;
     }
- }
+}
 
- /* Smartphones (portrait) ----------- */
- @media only screen 
- and (max-width : 320px) {
-    .app {
-        grid-template-columns: 1fr;
-    }
- }
-
- /* Tablet (landscape) ----------- */
- @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px) 
- and (orientation : landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .app {
         grid-template-columns: repeat(2, 1fr);
     }
- }
+}
 
- /* Tablet (portrait) ----------- */
- @media only screen 
- and (min-device-width : 768px) 
- and (max-device-width : 1024px) 
- and (orientation : portrait) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .app {
         grid-template-columns: 1fr;
     }
- }
+}
