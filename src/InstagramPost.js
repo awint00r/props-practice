@@ -71,8 +71,8 @@ class InstagramPost extends Component {
                     <CommentSection
                        comments={this.state.comments}
                        newComment={this.state.newComment}
-                       handleCommentChange={this.state.handleCommentChange}
-                       handleAddComment={this.state.handleAddComment}
+                       handleCommentChange={this.handleCommentChange}
+                       handleAddComment={this.handleAddComment}
                     />
                 </div>
             </div>
