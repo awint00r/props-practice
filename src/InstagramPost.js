@@ -69,7 +69,10 @@ class InstagramPost extends Component {
                 </div>
                 <div className="comments-section">
                     <CommentSection
-                        // Task 9: Pass down the necessary data and handlers used by the CommentSection component
+                       comments={this.state.comments}
+                       newComment={this.state.newComment}
+                       handleCommentChange={this.state.handleCommentChange}
+                       handleAddComment={this.state.handleAddComment}
                     />
                 </div>
             </div>
