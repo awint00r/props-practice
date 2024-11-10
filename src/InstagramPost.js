@@ -54,8 +54,7 @@ class InstagramPost extends Component {
                     <img src={`./images/user/${this.state.userImgURL}`} alt="User Profile" className="profile-pic" />
                     <h2>{this.state.userName}</h2>
                 </div>
-                {/* Task 6: For the element below, pattern match the src value referencing the user profile image src above. Refer to the insta.css file and also add the appropriate class name */}
-                <img alt="Post Image" />
+                <img src={`./images/post/${this.state.postImgURL}`} alt="Post Image" className="post-image" />
                 <div className="post-actions">
                     <PostActions 
                         totalLikes={this.state.totalLikes} 
