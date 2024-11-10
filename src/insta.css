@@ -113,3 +113,48 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
+ /* Smartphones (portrait and landscape) ----------- */
+ @media only screen 
+ and (min-device-width : 320px) 
+ and (max-device-width : 480px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+ }
+
+ /* Smartphones (landscape) ----------- */
+ @media only screen 
+ and (min-width : 321px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+ }
+
+ /* Smartphones (portrait) ----------- */
+ @media only screen 
+ and (max-width : 320px) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+ }
+
+ /* Tablet (landscape) ----------- */
+ @media only screen 
+ and (min-device-width : 768px) 
+ and (max-device-width : 1024px) 
+ and (orientation : landscape) {
+    .app {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+
+ /* Tablet (portrait) ----------- */
+ @media only screen 
+ and (min-device-width : 768px) 
+ and (max-device-width : 1024px) 
+ and (orientation : portrait) {
+    .app {
+        grid-template-columns: 1fr;
+    }
+ }
